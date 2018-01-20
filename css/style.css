@@ -1,0 +1,159 @@
+body{
+   background-image: url('../images/chalkboard.jpg');
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+/*--- Task page ----*/
+#task-container{
+    width: 100%;
+    position: relative;
+}
+#task-header-container{
+    display: flex;
+
+}
+
+#back-btn{
+    font-size: 30px;
+    margin: 50px;
+    cursor: pointer;
+    margin-bottom: 0;
+    width: 180px;
+
+}
+
+#task-header{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: none;
+}
+#task-text{
+    height: 100px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 80px;
+    display: block;
+}
+
+
+#another-container{
+    display: none;
+}
+
+#sliding-container {
+    position: absolute;
+    width: 100%;
+}
+
+main.hide #another-container {
+   display: flex;
+}
+#answer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.answer, .dashed{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    border: solid white;
+    margin: 15px;
+    cursor: pointer;
+}
+#dd-container{
+    display: none;
+}
+main.sequence #task-text {
+    display: none;
+}
+main.sequence #dd-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+main.sequence #task-header{
+    display: flex;
+}
+
+.dashed{
+    border-style: dashed;
+}
+
+.dashed.ui-droppable-disabled {
+    opacity: 0;
+}
+
+.answer:hover {
+    border: solid #fffcaa;
+}
+
+#message{
+    font-size: 40px;
+    text-align: center;
+}
+
+#stars-container{
+    display: flex;
+    width: 60px;
+    flex-direction: column;
+    margin: 40px 70px;
+}
+img{
+    width: 70px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+}
+/*---- Menu page -----*/
+
+#main-container{
+    display: block;
+}
+
+main.hide #main-container{
+    display: none;
+}
+
+.menu{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: solid white;
+    margin: 30px;
+    cursor: pointer;
+}
+.menu:hover {
+    border: solid #fffcaa;
+
+}
+#subtraction{
+    font-size: 135px;
+}
+#addition{
+    font-size: 135px;
+}
+#order{
+    font-size: 120px;
+}
+#mixed{
+    font-size: 120px;
+}
+
+
+.menu-container{
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+}
